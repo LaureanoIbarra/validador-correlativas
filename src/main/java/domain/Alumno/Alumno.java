@@ -2,6 +2,7 @@ package domain.Alumno;
 import domain.Materia.Materia;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Alumno {
@@ -24,7 +25,11 @@ public class Alumno {
         return materiasAprobadas;
     }
 
+    public void agregarMaterias(Materia... materias){
+        Collections.addAll(this.materiasAprobadas, materias);
+    }
+
     public Boolean cumpleCorrelatvivas(Materia materia){
-        return this.materiasAprobadas.contains(materia.getCorrelativas());
+        return this.materiasAprobadas.containsAll(materia.getCorrelativas());
     }
 }

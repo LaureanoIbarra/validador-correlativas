@@ -1,6 +1,7 @@
 package domain.Materia;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Materia {
@@ -20,5 +21,9 @@ public class Materia {
     }
     public List<Materia> getCorrelativas() {
         return correlativas;
+    }
+
+    public void agregarCorrelativas(Materia... materias){
+        Collections.addAll(this.correlativas, materias);
     }
 }

@@ -8,20 +8,17 @@ import java.util.List;
 
 public class Inscripcion {
 
-    private List<Materia> materias;
+    private Materia materia;
     private Alumno alumno;
 
-    public Inscripcion(List<Materia> materias) {
-        this.materias = new ArrayList<>();
-    }
-    public List<Materia> getMaterias() {
-        return materias;
-    }
-    public Alumno getAlumno() {
-        return alumno;
-    }
-
-    public void setAlumno(Alumno alumno) {
+    public Inscripcion(Materia materia, Alumno alumno) {
+        this.materia = materia;
         this.alumno = alumno;
     }
+
+
+    public Boolean aprobada(){
+        return alumno.cumpleCorrelatvivas(materia);
+    }
+
 }
