@@ -4,8 +4,6 @@ import domain.Alumno.Alumno;
 import domain.Inscripcion.Inscripcion;
 import domain.Materia.Materia;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class App
 {

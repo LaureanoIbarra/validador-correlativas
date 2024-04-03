@@ -14,17 +14,6 @@ public class Alumno {
         this.materiasAprobadas = new ArrayList<>();
     }
 
-    public String getLegajo() {
-        return legajo;
-    }
-
-    public void setLegajo(String legajo) {
-        this.legajo = legajo;
-    }
-    public List<Materia> getMateriasAprobadas() {
-        return materiasAprobadas;
-    }
-
     public void agregarMaterias(Materia... materias){
         Collections.addAll(this.materiasAprobadas, materias);
     }

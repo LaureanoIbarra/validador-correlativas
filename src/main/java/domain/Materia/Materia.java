@@ -13,12 +13,6 @@ public class Materia {
         this.correlativas = new ArrayList<>();
     }
 
-    public String getNombreMateria() {
-        return nombreMateria;
-    }
-    public void setNombreMateria(String nombreMateria) {
-        this.nombreMateria = nombreMateria;
-    }
     public List<Materia> getCorrelativas() {
         return correlativas;
     }
